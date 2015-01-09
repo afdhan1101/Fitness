@@ -311,11 +311,11 @@ Our Works / isotope Scripts
 	      
 	      var $container = $('.portfolio-items');
 
-			$container.isotope({
-				resizable: false, 
-				//masonry: { columnWidth: $container.width() / 5 },
-				itemSelector : '.work'
-			});
+			// $container.isotope({
+			// 	resizable: false, 
+			// 	//masonry: { columnWidth: $container.width() / 5 },
+			// 	itemSelector : '.work'
+			// });
 
 
 	      

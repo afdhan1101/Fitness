@@ -1,6 +1,6 @@
 /*
 Theme Name:Fitness Passion
-Theme URI:http://themeWagon.com/fitness-passion
+Theme URI:http://themeWagon.com/demo/fitness
 Author:ThemeWagon
 Author URI:http://themeWagon.com/
 Description:Fitness Passion is a single page html template based on bootstrap 3
@@ -67,6 +67,9 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		text-decoration:none;
 		outline:none;
 	
+	}
+	.lead{
+		font-family: 'Open Sans', sans-serif;
 	}
 
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
@@ -222,7 +225,8 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.h-desc{
-		font-size:16px;
+		font-size:18px;
+		color: white;
 		font-weight: 100;
 		text-align: center;
 		margin:20px auto;
@@ -269,7 +273,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.gray1{
-		color:#eeeeee;
+		color: #CFCFCF;
 	}
 
 	.gray2{
@@ -330,6 +334,12 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	
 /* Home Section */
 
+	.arrow-down {
+		margin-top: 50px;
+		color: #8BC3A3;
+		font-size: 55px !important;
+	}
+
 	#home{
 		position: relative;
 		width: 100%;
@@ -386,99 +396,6 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		text-shadow:2px 2px 2px rgba(0, 0, 0, 0.15);
 		line-height: 0.9;
 		font-size:80%;
-		margin:10px 0;
-	}
-
-/* Home V5  */
-
-	#home .v5{
-		width:100%;
-		height: 100%;
-		top:0;
-		z-index: 4;
-		text-align: center;
-	}
-
-	#home .v5 .typographic{
-		height: auto;
-		width:100%;
-		max-width:970px;
-		margin:0 auto;
-		position: relative;
-		top:50%;
-		padding:0 25px;
-		color:#dfdfdf;
-		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		transform: translateY(-50%);
-	}
-
-	#home .v5 .typographic .hometexts-5{
-		height: 115px;
-	}
-
-	#home .v5 .typographic .hometexts-5 ul li{
-		font-size:55px;
-	}
-
-	#home .v5 .typographic .hometexts-5 .flex-direction-nav li{
-		width:44px;
-		height: 37px;
-		position: relative;
-		display: inline-block;
-		opacity: 1;
-	}
-	.scroll{
-		background: none !important ;
-	}
-	.active{
-		color: #888 !important;
-	}
-
-	#home .v5 .typographic .hometexts-5 .flex-direction-nav li a{
-		width:44px;
-		height: 37px;
-		position: absolute;
-		display: block;
-		opacity:1;
-		top:5px;
-		background-image: url(../images/v5-arrows.png);
-		-webkit-transition: all 0.2s;
-		-moz-transition: all 0.2s;
-		transition: all 0.2s;
-	}
-
-	#home .v5 .typographic .hometexts-5 .flex-direction-nav li a.flex-prev{
-		left:0;
-		background-position: left top;
-	}
-
-	#home .v5 .typographic .hometexts-5 .flex-direction-nav li a.flex-prev:hover{
-		background-position: left bottom;
-	}
-
-	#home .v5 .typographic .hometexts-5 .flex-direction-nav li a.flex-next{
-		left:5px;
-		background-position: right top;
-	}
-
-	#home .v5 .typographic .hometexts-5 .flex-direction-nav li a.flex-next:hover{
-		background-position: right bottom;
-	}
-
-/* V5 Typographic Text Options  */
-
-	#home .v5 .typographic h1{
-		text-shadow:2px 2px 2px rgba(0, 0, 0, 0.15);
-		line-height:0.75;
-		font-size:70%;
-		margin:10px 0;
-	}
-
-	#home .v5 .typographic h2{
-		text-shadow:2px 2px 2px rgba(0, 0, 0, 0.15);
-		line-height: 0.85;
-		font-size:90%;
 		margin:10px 0;
 	}
 
@@ -702,7 +619,11 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}	
 
 /* About */
-	
+   @media (min-width:600px) and (max-width:1020px){
+	p.lead.lead-text {
+		margin-top: 20px;
+		}
+	}
 	#about .inner .boxes{
 		overflow: hidden;
 	}
@@ -779,7 +700,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.about-box .about-text{
-		font-size:13px;
+		font-size: 14px;
 	}
 
 
@@ -923,16 +844,21 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		font-weight: bold;
 	}
 
-	.f-box:hover .f-icon i{
-		background:#111;
+	.f-box:hover .f-icon i {
+		background: rgba(255, 255, 255, 0.25);
 	}
 	
 	#features{
-		background:#333 url(../images/bgd/background5.jpg) repeat;
+		background:#333 url(../images/parallax/3.jpg) repeat;
 	}
 
 
-/* Testimonials */	
+/* Testimonials */
+
+	.carousel-indicators {
+		position: absolute;
+		bottom: 0px !important;
+		}	
 
 	.testimonials{
 		background: url(../images/parallax/2.jpg) center center fixed;
@@ -965,12 +891,12 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		line-height:1.5em;
 	}
 
-	.monial p{
-		margin:20px 20px;
-		font-size:18px;
-		color: #666;
-		text-align: right;
-	}
+	.monial p {
+		margin: 50px auto;
+		font-size: 18px;
+		color: #FFF;
+		text-align: center;
+}
 
 /* Testimonial Controls */	
 
@@ -1213,9 +1139,10 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 
 /* Contact */
 
-	#contact{
-		background:url(../images/parallax/4.jpg) center fixed;
-		padding:10px 0 10px;
+	#contact {
+		background: url(../images/parallax/4.jpg) fixed;
+		padding: 10px 0 10px;
+		background-size: cover;
 	}
 
 	.contact-text{
